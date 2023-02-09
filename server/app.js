@@ -14,10 +14,10 @@ app.use(fileupload({ useTempFiles: true, tempFileDir: "./upload" }));
 
 //routes
 app.use(postsRoutes);
-app.use(express.static(join(__dirname, '../client/build')))
+app.use(express.static(join(__dirname, '../build')))
 
 app.get("*", (req,res)=>{
-    res.sendFile(join(__dirname, "../client/build/index.html"))
+    res.sendFile(join(__dirname, "../build/index.html"))
 })
 
 export default app;
