@@ -1,0 +1,10 @@
+# node
+/node_modules
+#/client/node_modules
+
+# environment variables
+.env
+
+# Otros
+/.vscode
+AutorDelCódigo.txt
